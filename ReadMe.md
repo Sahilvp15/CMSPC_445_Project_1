@@ -12,7 +12,8 @@ This project aims to develop machine learning models for predicting house prices
 4. [Model Development](#model-development)
 5. [Test Dataset Extraction](#test-dataset-extraction)
 6. [Model Evaluation](#model-evaluation)
-7. [Discussion](#discussion)
+7. [Results](#results)
+8. [Discussion](#discussion)
 
 ## Data Collection
 
@@ -38,6 +39,12 @@ A representative test dataset is extracted from the original data, following bes
 
 The models are evaluated on the test set using a comprehensive set of regression metrics, including Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared. Additionally, the continuous predictions are converted to binary values, allowing for the calculation of classification metrics such as precision, recall, F1-score, and accuracy.
 
+## Results
+
+- **Linear Regression**: This model proved to be the most effective, with an impressive R-Squared value of 0.95, indicating that it explains 95% of the variance in the target variable. Additionally, the analysis suggests a positive correlation between house area and price, where larger houses generally have higher prices.
+
+- **Decision Tree Regressor**, **Random Forest Regressor**, and **Gradient Boosting Regressor**: These models showed signs of overfitting, with an F1 value of 1.00, which is an indication of potential overfitting.
+
 ## Discussion
 
-While the evaluation process is thorough, the report indicates that the R-squared values are not satisfactory, suggesting that the models' predictive ability has room for improvement. Further refinements in feature engineering, model selection, and hyperparameter tuning may be necessary to enhance the models' performance.
+While the Linear Regression model demonstrated strong predictive performance, the ensemble models (Decision Tree, Random Forest, and Gradient Boosting) exhibited overfitting issues. Further refinements in feature engineering, model selection, and hyperparameter tuning may be necessary to enhance the ensemble models' performance and mitigate overfitting. Additionally, the report indicates that the R-squared values for the ensemble models are not satisfactory, suggesting that their predictive ability has room for improvement.
